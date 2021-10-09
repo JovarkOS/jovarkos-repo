@@ -1,0 +1,10 @@
+RewriteEngine off
+AddType text/shtml .shtml
+AddOutputFilter INCLUDES .shtml
+Options +Indexes
+IndexOptions FancyIndexing SuppressHTMLPreamble XHTML FoldersFirst 
+HeaderName HEADER.shtml
+# ReadmeName jovarkos-iso/webfiles/README.shtml
+
+IndexIgnore scan_repo.sh
+IndexIgnore *.html
