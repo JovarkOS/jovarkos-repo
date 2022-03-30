@@ -26,8 +26,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: run ls and pipe output sandwiched between Apache HEADER.html and README.html files 
         run: |
-          curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html
-          curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html
+          curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > HEADER.html
+          curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > README.html
           ls -l > listing
           cat HEADER.html listing README.html > index.md
           git config --global user.name 'Lucas Burlingham' 
