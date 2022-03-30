@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Update_Listing
 
 # Controls when the workflow will run
 on:
@@ -19,13 +19,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Get a list of files in a directory
-        run: cd x86_64
-
       # Runs a set of commands using the runners shell
       - name: run ls and pipe output sandwiched between Apache HEADER.html and README.html files 
         run: |
+          cd x86_64
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > HEADER.html
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > README.html
           ls -l > listing
