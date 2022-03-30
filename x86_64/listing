@@ -1,34 +1,3 @@
-total 80784
--rw-r--r-- 1 runner docker     2399 Mar 30 18:31 HEADER.html
--rw-r--r-- 1 runner docker      815 Mar 30 18:31 README.html
--rw-r--r-- 1 runner docker    69219 Mar 30 18:31 aurutils-3.1.2-2-any.pkg.tar.zst
--rw-r--r-- 1 runner docker   172376 Mar 30 18:31 autokey-common-0.95.10-4-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker   107111 Mar 30 18:31 autokey-gtk-0.95.10-4-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker    15771 Mar 30 18:31 cfs-zen-tweaks-1.0.0-1-any.pkg.tar.zst
--rw-r--r-- 1 runner docker    26896 Mar 30 18:31 chrome-gnome-shell-10.1-6-any.pkg.tar.zst
--rw-r--r-- 1 runner docker 10716406 Mar 30 18:31 cloudflare-warp-bin-2021.12.0-2-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker    40284 Mar 30 18:31 debtap-3.4.2-1-any.pkg.tar.zst
--rw-r--r-- 1 runner docker    13267 Mar 30 18:31 gnome-extension-media-controls-21.09.16-17-any.pkg.tar.zst
--rw-r--r-- 1 runner docker    53238 Mar 30 18:31 gnome-shell-extension-arch-update-46-1-any.pkg.tar.zst
--rw-r--r-- 1 runner docker   200788 Mar 30 18:31 gnome-shell-extension-dash-to-dock-69+525+ge4beec8-1-any.pkg.tar.zst
--rw-r--r-- 1 runner docker  4784896 Mar 30 18:31 jovark-calamares-3.2.53-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  4592115 Mar 30 18:31 jovarkos-calamares-3.2.43-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker   437878 Mar 30 18:31 jovarkos-calamares-config-pure-21.09.15-04-any.pkg.tar.zst
-lrwxrwxrwx 1 runner docker       23 Mar 30 18:31 jovarkos-repo.db -> jovarkos-repo.db.tar.gz
--rw-r--r-- 1 runner docker     7910 Mar 30 18:31 jovarkos-repo.db.tar.gz
-lrwxrwxrwx 1 runner docker       26 Mar 30 18:31 jovarkos-repo.files -> jovarkos-repo.files.tar.gz
--rw-r--r-- 1 runner docker   429953 Mar 30 18:31 jovarkos-repo.files.tar.gz
--rw-r--r-- 1 runner docker        0 Mar 30 18:31 listing
--rw-r--r-- 1 runner docker   572351 Mar 30 18:31 minecraft-launcher-928-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker   788644 Mar 30 18:31 php-codesniffer-3.6.2-1-any.pkg.tar.zst
--rw-r--r-- 1 runner docker   401934 Mar 30 18:31 pico-2.00-2-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  1101599 Mar 30 18:31 plymouth-git-0.9.5.r98.g1297d4c-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  5058142 Mar 30 18:31 pythonqt-3.2-9-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker 17270083 Mar 30 18:31 realvnc-vnc-server-6.8.0-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  4933899 Mar 30 18:31 realvnc-vnc-viewer-6.21.1109-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker   508021 Mar 30 18:31 rpi-imager-1.6.2-2-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  2617873 Mar 30 18:31 rtl8812au-dkms-git-5.9.3.2.r11.g460ad2e-1-x86_64.pkg.tar.zst
--rwxr-xr-x 1 runner docker      125 Mar 30 18:31 scan_repo.sh
--rw-r--r-- 1 runner docker 22662728 Mar 30 18:31 snapd-2.54.4-1-x86_64.pkg.tar.zst
--rw-r--r-- 1 runner docker  1019846 Mar 30 18:31 ttf-breeze-sans-20150728-3-any.pkg.tar.zst
--rw-r--r-- 1 runner docker  4059093 Mar 30 18:31 ventoy-1.0.12-1-x86_64.pkg.tar.zst
+total 8
+-rw-r--r-- 1 runner docker   54 Mar 30 18:34 index.html
+drwxr-xr-x 2 runner docker 4096 Mar 30 18:34 x86_64
