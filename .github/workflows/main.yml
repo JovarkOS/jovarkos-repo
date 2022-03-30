@@ -24,11 +24,11 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > x86_64/HEADER.html
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > x86_64/README.html
-          cat x86_64/HEADER.html > HEADER.html
+          cat x86_64/HEADER.html | grep -v title > HEADER.html
           ls -l x86_64 > x86_64/listing
           cat x86_64/HEADER.html x86_64/listing x86_64/README.html > x86_64/index.md
           git config --global user.name 'Lucas Burlingham' 
           git config --global user.email 'lucas@lucasburlingham.me'
-          git add index.md
+          git add x86_64/index.md
           git commit -m '[ACTIONS] Update file listing'
           git push
