@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Repository holding packages for the JovarkOS Distribution based on Arch Linux." />
+    </meta>
+	<meta name="author" content="JovarkOS Development Team, Lucas Burlingham" />
+    <title>JovarkOS - Packages</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="\\jovarkos.org/assets/favicon.ico" />
+    <!-- FontAwesome 5.15.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://jovarkos.org/css/styles.css" rel="stylesheet" />
+    <link rel="canonical" href="https://jovarkos.org/contact.html">
+
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="!#">JovarkOS  <span class="text-muted">repo</span></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="https://jovarkos.org/">JovarkOS Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://jovarkos.org/download">JovarkOS Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://docs.jovarkos.org/">Documentation</a></li>
+		    <ul>
+                </div>
+            </div>
+        </nav>
+   </main>
+  </body>
+</html>
+total 80784
+-rw-r--r-- 1 runner docker     2399 Mar 30 18:31 HEADER.html
+-rw-r--r-- 1 runner docker      815 Mar 30 18:31 README.html
+-rw-r--r-- 1 runner docker    69219 Mar 30 18:31 aurutils-3.1.2-2-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker   172376 Mar 30 18:31 autokey-common-0.95.10-4-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker   107111 Mar 30 18:31 autokey-gtk-0.95.10-4-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker    15771 Mar 30 18:31 cfs-zen-tweaks-1.0.0-1-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker    26896 Mar 30 18:31 chrome-gnome-shell-10.1-6-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker 10716406 Mar 30 18:31 cloudflare-warp-bin-2021.12.0-2-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker    40284 Mar 30 18:31 debtap-3.4.2-1-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker    13267 Mar 30 18:31 gnome-extension-media-controls-21.09.16-17-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker    53238 Mar 30 18:31 gnome-shell-extension-arch-update-46-1-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker   200788 Mar 30 18:31 gnome-shell-extension-dash-to-dock-69+525+ge4beec8-1-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker  4784896 Mar 30 18:31 jovark-calamares-3.2.53-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  4592115 Mar 30 18:31 jovarkos-calamares-3.2.43-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker   437878 Mar 30 18:31 jovarkos-calamares-config-pure-21.09.15-04-any.pkg.tar.zst
+lrwxrwxrwx 1 runner docker       23 Mar 30 18:31 jovarkos-repo.db -> jovarkos-repo.db.tar.gz
+-rw-r--r-- 1 runner docker     7910 Mar 30 18:31 jovarkos-repo.db.tar.gz
+lrwxrwxrwx 1 runner docker       26 Mar 30 18:31 jovarkos-repo.files -> jovarkos-repo.files.tar.gz
+-rw-r--r-- 1 runner docker   429953 Mar 30 18:31 jovarkos-repo.files.tar.gz
+-rw-r--r-- 1 runner docker        0 Mar 30 18:31 listing
+-rw-r--r-- 1 runner docker   572351 Mar 30 18:31 minecraft-launcher-928-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker   788644 Mar 30 18:31 php-codesniffer-3.6.2-1-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker   401934 Mar 30 18:31 pico-2.00-2-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  1101599 Mar 30 18:31 plymouth-git-0.9.5.r98.g1297d4c-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  5058142 Mar 30 18:31 pythonqt-3.2-9-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker 17270083 Mar 30 18:31 realvnc-vnc-server-6.8.0-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  4933899 Mar 30 18:31 realvnc-vnc-viewer-6.21.1109-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker   508021 Mar 30 18:31 rpi-imager-1.6.2-2-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  2617873 Mar 30 18:31 rtl8812au-dkms-git-5.9.3.2.r11.g460ad2e-1-x86_64.pkg.tar.zst
+-rwxr-xr-x 1 runner docker      125 Mar 30 18:31 scan_repo.sh
+-rw-r--r-- 1 runner docker 22662728 Mar 30 18:31 snapd-2.54.4-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 runner docker  1019846 Mar 30 18:31 ttf-breeze-sans-20150728-3-any.pkg.tar.zst
+-rw-r--r-- 1 runner docker  4059093 Mar 30 18:31 ventoy-1.0.12-1-x86_64.pkg.tar.zst
+<!DOCTYPE=html>
+<html>
+<body>
+
+<footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; JovarkOS Development Team 2021 </div>
+                </div>
+                <div class="col-auto">
+                  <a class="link-light small" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+</body>
+
+</html>
