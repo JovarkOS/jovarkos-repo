@@ -31,6 +31,6 @@ jobs:
           cat x86_64/HEADER.html x86_64/listing x86_64/README.html > x86_64/listing.html
           git config --global user.name 'Lucas Burlingham' 
           git config --global user.email 'lucas@lucasburlingham.me'
-          git add x86_64/index.md
+          git add x86_64/listing.html
           git commit -m '[ACTIONS] Update file listing'
           git push
