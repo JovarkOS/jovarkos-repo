@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Update_Listing
 
 # Controls when the workflow will run
@@ -25,9 +23,10 @@ jobs:
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > x86_64/HEADER.html
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > x86_64/README.html
           cat x86_64/HEADER.html | grep -v title > HEADER.html
-          echo '<pre>' > x86_64/listing
-          ls -l x86_64 >> x86_64/listing
+          echo '<pre style="margin-left: 10px;">' > x86_64/listing
+          ls -l --size=M x86_64 | awk '{ print $1 $2 $3 $4 $5 }' >> x86_64/listing
           echo '</pre>' >> x86_64/listing
+          rm x86_64/listing x86_64/listing.html
           cat x86_64/HEADER.html x86_64/listing x86_64/README.html > x86_64/listing.html
           git config --global user.name 'Lucas Burlingham' 
           git config --global user.email 'lucas@lucasburlingham.me'
