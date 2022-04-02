@@ -13,7 +13,7 @@ jobs:
           twitter_app_consumer_api_secret_key: ${{ secrets.TWITTER_APP_CONSUMER_API_SECRET_KEY }}
           twitter_app_access_token: ${{ secrets.TWITTER_APP_ACCESS_TOKEN }}
           twitter_app_access_token_secret: ${{ secrets.TWITTER_APP_ACCESS_TOKEN_SECRET }}
-    build-listing-file:
+  build-listing-file:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
