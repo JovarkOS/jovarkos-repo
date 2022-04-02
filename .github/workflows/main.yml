@@ -1,4 +1,4 @@
-name: Update_Listing
+name: automatic-deployment
 on:
   workflow_dispatch:
 jobs:
@@ -26,8 +26,6 @@ jobs:
   
   build-secondary-repo-db:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
       - name: Create identical repo db for backup repo
           run: |
             cp x86_64/jovark-repo.db x86_64/jovark-repo-secondary.db
