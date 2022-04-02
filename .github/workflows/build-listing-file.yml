@@ -11,9 +11,10 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > x86_64/HEADER.html
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > x86_64/README.html
-          cat x86_64/HEADER.html | grep -v "title" > HEADER.html
+          cat x86_64/HEADER.html | grep -v '</body>\|</html>' > HEADER.html
+          cat x86_64/README.html | grep -v '<body>\|<html>\|<!DOCTYPE=html>' > README.html
           echo '<pre style="margin-left: 20px;">' >> x86_64/listing
-          echo 'Size       Date           Name' > x86_64/listing
+          echo 'Size       Date           Name' >> x86_64/listing
           ls -l x86_64 --block-size=M | awk '{ print $5 "       " $6 " " $7 " " $8 "       " $9 }' >> x86_64/listing
           echo '</pre>' >> x86_64/listing
           cat x86_64/HEADER.html x86_64/listing x86_64/README.html > x86_64/listing.html
