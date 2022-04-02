@@ -2,7 +2,7 @@ name: automatic-deployment
 on:
   workflow_dispatch:
 jobs:
-  build-secondary-repo-db:
+  send-twitter-update:
     runs-on: ubuntu-latest
     steps:
       - name: Post Twitter Status
