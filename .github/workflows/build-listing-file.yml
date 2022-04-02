@@ -1,6 +1,5 @@
 name: build-listing-file
-on:
-  on: [push]
+on: [push]
 jobs:
   build-listing-file:
     runs-on: ubuntu-latest
