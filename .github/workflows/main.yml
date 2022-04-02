@@ -2,7 +2,20 @@ name: automatic-deployment
 on:
   workflow_dispatch:
 jobs:
-  build:
+  build-secondary-repo-db:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create identical repo db for backup repo
+          run: |
+            cp x86_64/jovark-repo.db x86_64/jovark-repo-secondary.db
+            git config --global user.name 'Lucas Burlingham'
+            git config --global user.email 'lucas@lucasburlingham.me'
+            git add x86_64/jovark-repo-secondary.db
+            git commit -m '[ACTIONS] Create db file with backup server naming'
+            git push
+  build-listing-file:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,17 +36,3 @@ jobs:
           git add x86_64/listing.html
           git commit -m '[ACTIONS] Update file listing'
           git push
-  
-  build-secondary-repo-db:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Create identical repo db for backup repo
-          run: |
-            cp x86_64/jovark-repo.db x86_64/jovark-repo-secondary.db
-            git config --global user.name 'Lucas Burlingham'
-            git config --global user.email 'lucas@lucasburlingham.me'
-            git add x86_64/jovark-repo-secondary.db
-            git commit -m '[ACTIONS] Create db file with backup server naming'
-            git push
