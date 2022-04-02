@@ -1,0 +1,2 @@
+spotify* filter=lfs diff=lfs merge=lfs -text
+zoom* filter=lfs diff=lfs merge=lfs -text
