@@ -1,30 +1,20 @@
 name: Update_Listing
-
-# Controls when the workflow will run
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a set of commands using the runners shell
       - name: run ls and pipe output sandwiched between Apache HEADER.html and README.html files 
         run: |
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/HEADER.html > x86_64/HEADER.html
           curl https://raw.githubusercontent.com/JovarkOS/jovarkos-repo/main/x86_64/README.html > x86_64/README.html
           cat x86_64/HEADER.html | grep -v title > HEADER.html
-          echo '<pre style="margin-left: 10px;">' > x86_64/listing
-          ls -l x86_64 --block-size=M | awk '{ print $5  $6  $7  $8  $9 }' >> x86_64/listing
+          echo '<pre style="margin-left: 20px;">' > x86_64/listing
+          echo 'Size       Date           Name' > x86_64/listing
+          ls -l x86_64 --block-size=M | awk '{ print $5 "       " $6 " " $7 " " $8 "       " $9 }' >> x86_64/listing
           echo '</pre>' >> x86_64/listing
           cat x86_64/HEADER.html x86_64/listing x86_64/README.html > x86_64/listing.html
           rm x86_64/listing
@@ -33,3 +23,16 @@ jobs:
           git add x86_64/listing.html
           git commit -m '[ACTIONS] Update file listing'
           git push
+  
+  build-secondary-repo-db:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+      - name: Create identical repo db for backup repo
+          run: |
+            cp x86_64/jovark-repo.db x86_64/jovark-repo-secondary.db
+            git config --global user.name 'Lucas Burlingham'
+            git config --global user.email 'lucas@lucasburlingham.me'
+            git add x86_64/jovark-repo-secondary.db
+            git commit -m '[ACTIONS] Create db file with backup server naming'
+            git push
