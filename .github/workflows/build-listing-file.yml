@@ -1,6 +1,6 @@
 name: build-listing-file
 on:
-  workflow_dispatch:
+  on: [push]
 jobs:
   build-listing-file:
     runs-on: ubuntu-latest
