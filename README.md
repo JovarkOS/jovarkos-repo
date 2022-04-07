@@ -7,7 +7,7 @@
     <br/>
     <br/>
     <a href="https://github.com/jovarkos/jovarkos-repo/issues">Report Bug</a>
-    .
+  |
     <a href="https://github.com/jovarkos/jovarkos-repo/issues">Request Feature</a>
   </p>
 </p>
