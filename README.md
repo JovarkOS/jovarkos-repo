@@ -21,7 +21,7 @@ Append the following configuration  to `/etc/pacman.conf`:
 ```
 [jovarkos-repo]
 SigLevel = Optional TrustAll
-Include =  /etc/pacman.d/jovarkos-mirrorlist
+Include = /etc/pacman.d/jovarkos-mirrorlist
 ```
 
 Assuming that there is a file at `/etc/pacman.d/jovarkos-mirrorlist` with the contents: 
