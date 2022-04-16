@@ -24,4 +24,4 @@ jobs:
           git add x86_64/listing.html
           git commit -m '[ACTIONS] Update file listing'
           git push
-          curl -s -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"GitHub Action \`Update Listing\` run on \`$(uname -a)\` at  \`$(date)\`.\"}" https://discord.com/api/webhooks/965035672396267612/Ycl2Eo0SDY7JiHTj7rEc6PU2fV_ziRDY9QT0iTKnk7KbJ204LX_jLJvEr4iXUyi7Xvt8 >> /dev/null
+          curl -s -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"GitHub Action \`Update Listing\` run on \```$(uname -a)\``` at  \`$(date)\`.\"}" https://discord.com/api/webhooks/965035672396267612/Ycl2Eo0SDY7JiHTj7rEc6PU2fV_ziRDY9QT0iTKnk7KbJ204LX_jLJvEr4iXUyi7Xvt8 >> /dev/null
