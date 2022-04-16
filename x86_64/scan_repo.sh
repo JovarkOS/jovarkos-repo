@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# Make the primary server repo database files
+# Make the database files
 repo-add -n -R jovarkos-repo.db.tar.gz *.pkg.tar.zst
-rm *.gz.old
-git add .
-git commit -m "[SCAN REPO] Add packages to repo"
+# Push to GitHub
+git commit -a -m "[SCAN REPO] Add packages to repo"
 git push
