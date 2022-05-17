@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Make the database files
-repo-delete *
+repo-remove *
 repo-add -n -R jovarkos-repo.db.tar.gz *.pkg.tar.zst
 # Push to GitHub
 git add .
